@@ -17,7 +17,7 @@ function Lists() {
   const ListItems = useSelector((state) => state.ItemsAdded.ListItems);
   const dispatch = useDispatch();
 
-  document.title = "Wishlist section"
+  document.title = "Wishlist section";
 
   useEffect(() => {
     // Update the added ids whenever the list items change
@@ -100,8 +100,8 @@ function Lists() {
                         </div>
                       </div>
                       <div className="card-price">
-                        <p className="discount">${items.price}</p>
-                        <p className="mrp">${Math.round(items.price * 1.66)}</p>
+                        <p className="discount">₹{items.price}</p>
+                        <p className="mrp">₹{Math.round(items.price * 1.66)}</p>
                         <p className="price-off">(60% OFF)</p>
                       </div>
                     </div>

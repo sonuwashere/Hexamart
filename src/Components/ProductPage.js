@@ -21,7 +21,7 @@ function ProductPage() {
 
   const tiltRef = useRef(null);
 
-  document.title = `${product ? product.title : "Amazon"}`
+  document.title = `${product ? product.title : "Hexamart"}`;
 
   const CartItems = useSelector((state) => state.CartItemsAdded.CartItems);
   const dispatch = useDispatch();
@@ -177,8 +177,8 @@ function ProductPage() {
             {product ? (
               <div className="product-actual-price">
                 <p className="price-one">Price:</p>
-                <p className="price-two">${product.price}</p>
-                <p className="mrp">${Math.round(product.price * 1.66)}</p>
+                <p className="price-two">₹{product.price}</p>
+                <p className="mrp">₹{Math.round(product.price * 1.66)}</p>
               </div>
             ) : (
               ""

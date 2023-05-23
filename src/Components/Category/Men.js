@@ -8,7 +8,7 @@ import { useSelector, useDispatch } from "react-redux";
 import Footer from "../Footer";
 import Spinner from "../Spinner";
 import { NavLink } from "react-router-dom";
-import LowerNav from '../LowerNav'
+import LowerNav from "../LowerNav";
 
 function Men() {
   const [AllProducts, setAllProducts] = useState([]);
@@ -95,8 +95,8 @@ function Men() {
                     </div>
                   </div>
                   <div className="card-price">
-                    <p className="discount">${items.price}</p>
-                    <p className="mrp">${Math.round(items.price * 1.66)}</p>
+                    <p className="discount">₹{items.price}</p>
+                    <p className="mrp">₹{Math.round(items.price * 1.66)}</p>
                   </div>
                 </div>
               </div>
